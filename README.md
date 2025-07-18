@@ -1,0 +1,1 @@
+wp--version-checker is a simple python script using python requests library to get text of given request, afterwards it searches for <generator> tags in xml of wordpress powered website by accessing website.com/feed.
