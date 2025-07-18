@@ -1,10 +1,10 @@
 import requests
-import re
+# import re
 userInput = input("Enter wordpress website: ")
 if userInput:
     text = requests.get(f"{userInput.replace(" ","")}/feed")
     generator = text.text
-    generatorSrc = re.findall("<generator>",generator)
+    # generatorSrc = re.findall("<generator>",generator)
     splitText = generator.split()
     genStart = generator.find("<generator>")
     genEnd = generator.find("</generator>")
